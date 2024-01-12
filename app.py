@@ -31,13 +31,13 @@ def main():
         if submit_button:
 
             if not user_input:
-                user_input = 'magic zoo'
+                user_input = 'alchemy shop'
                 
             with st.spinner("Thinking..."):
                 st.write(f"Building Description: {user_input}")
 
                 #Build the prompt
-                prompt = "Isometric_Setting,building exterior,(black background),<lora:Stylized_ Setting SDXL:4>,"
+                prompt = "game icon,Isometric_Setting,building exterior,(black background),<lora:Stylized_ Setting SDXL:4>,"
                 prompt += user_input
 
                 #create the character picture
