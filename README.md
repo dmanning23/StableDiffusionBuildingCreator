@@ -1,9 +1,9 @@
 # StableDiffusionCharacterCreator
-Use generative AI to create characters for your projects
+Use generative AI to create SimCity style building for your projects
 
-This app uses Stable Diffusion, StreamLit, and Python to create and easy-to-use interface for creating character profile images.
+This app uses Stable Diffusion, StreamLit, and Python to create and easy-to-use interface for creating cute building exteriors.
 
-Type in a short description, and it will generate a character profile image and remove the background:
+Type in a short description, and it will generate a building exterior image and remove the background:
 
 ![Screenshot](./Screenshot.png)
 
@@ -17,7 +17,7 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui
 ./webui.sh --api
 ```
 
-3. Download your models and put them in the correct place. The example here is using blue_pencil-XL, some other good models are DreamShaper and CyberRealistic
+3. Download your models and put them in the correct place. The example here is using Game Icon Institute 3.0 and the Stylized Setting Lora
 
 Or skip all that and find an instance of Stable Diffusion running out in the wild and hook up to it in the app.py file
 
@@ -29,10 +29,10 @@ Or skip all that and find an instance of Stable Diffusion running out in the wil
 
 3. Use the "run and debug" button in VSCode to start the app OR In your terminal use the command `streamlit run app.py`
 
-4. Type in a short description into the txt box and hit the "Create!" button. Hint: Stable Diffusion works best with short, comma separated values. "female, pirate, red hair" will give much better & consistent results than the plain english "Female pirate with red hair". 
+4. Type in a short description into the txt box and hit the "Create!" button.
 
 5. Go get a cup of coffee
 
-6. Enjoy the generated profile pic! 
+6. Enjoy the generated pic! 
 
 The images created by Stable Diffusion are stored in the `sdresults` folder, and images with background removed are stored in `nobackground`
