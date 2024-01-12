@@ -37,12 +37,12 @@ def main():
                 st.write(f"Building Description: {user_input}")
 
                 #Build the prompt
-                prompt = "game icon,Isometric_Setting,building exterior,(black background),<lora:Stylized_ Setting SDXL:4>,"
+                prompt = "game icon,Isometric_Setting,(building exterior),(black background),<lora:Stylized_Setting_SDXL:2>,"
                 prompt += user_input
 
                 #create the character picture
                 result = api.txt2img(prompt=prompt,
-                    negative_prompt="out of frame,cut off",
+                    negative_prompt="out of frame,cut off,blurry",
                     cfg_scale=7,
                     width=768,
                     height=512,
