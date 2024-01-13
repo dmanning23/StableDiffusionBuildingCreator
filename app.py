@@ -16,7 +16,8 @@ def main():
     
     #Set the model to be used by stable diffusion
     options = {}
-    options['sd_model_checkpoint'] = "gameIconInstitute_v30.safetensors [c112297163]"
+    #options['sd_model_checkpoint'] = "gameIconInstitute_v30.safetensors [c112297163]"
+    options['sd_model_checkpoint'] = "fantasyWorld_v10.safetensors [524882ba22]"
     api.set_options(options)
 
     #Set the model to be used for removing the background of the image
@@ -37,12 +38,12 @@ def main():
                 st.write(f"Building Description: {user_input}")
 
                 #Build the prompt
-                prompt = "game icon,Isometric_Setting,(building exterior),(black background),<lora:Stylized_Setting_SDXL:2>,"
+                prompt = "(isometric),Isometric_Setting,(building exterior),((black background)),<lora:Stylized_Setting_SDXL:2>,bright colors,"
                 prompt += user_input
 
                 #create the character picture
                 result = api.txt2img(prompt=prompt,
-                    negative_prompt="out of frame,cut off,blurry",
+                    negative_prompt="text,word,monochrome,cropped,low quality,normal quality,soft line,username,(watermark),(signature),blurry,soft,sketch,ugly,logo,pixelated,lowres,out of frame,cut off,blurry,foggy,reflection",
                     cfg_scale=7,
                     width=768,
                     height=512,
