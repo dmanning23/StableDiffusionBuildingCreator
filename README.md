@@ -7,6 +7,14 @@ Type in a short description, and it will generate a building exterior image and 
 
 ![Screenshot](./Screenshot.png)
 
+## Tech Stack
+dmanning23/StableDiffusionBuildingCreator is built on the following main stack:
+
+- [Python](https://www.python.org) – Languages
+- [Streamlit](https://streamlit.io) – Machine Learning Tools
+
+Full tech stack [here](/techstack.md)
+
 ## Setup Stable Diffusion
 
 1. Follow the steps to setup a local instance of Stable Diffusion:
